@@ -77,9 +77,28 @@ a:focus {
 /**********************************/
 .top-bar {
     position: relative;
-    height: 130px;/*Cambio*/
-    background: #304848; /*Cambio*/
+    height: 330px;/*Cambio*/
+    width: 100% !important;
+
+
+    /*#######################*/ 
+    /*Agrego*/
+    /*_______imagen de fondo___*/
+    background-image: url("file:///C:/Users/victo/Desktop/Trabajo/NAUTAS%20WEB%20y%20Asoc/Asociaciones/Lex%20Serviless%20(Carlos)/Proyectos%20TUBONOR/1-%20Pagina%20Web/pagina-git/PROYECT-WORK-Tubonor-Nautas-web-Y-Serviless-Carlos-Roberto-Flores-PRIVADO/img/casa-central-op1-scaled.jpg")!important;
+    background-size: cover;
+    background-position: 50%;
+
+
 }
+
+/*#######################*/ 
+/*Agrego*/
+.top-sub-bar{
+    z-index: 99999;
+    background-color: rgba(255,255,255,0.65);
+    width: 100% !important;
+}
+/*######___END___###########*/ 
 
 .top-bar .logo {
     padding: 15px 0;
@@ -105,7 +124,7 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-
+    font-size: 1rem;/*Cambio tamaño*/
 }
 
 
@@ -129,14 +148,14 @@ a:focus {
 .top-bar .top-bar-text h3 {
     margin: 0 0 5px 0;
     color: #030f27;
-    font-size: 16px;
+    font-size: 1.2rem; /*Cambio*/
     font-weight: 400;
 }
 
 .top-bar .top-bar-text p {
     margin: 0;
     color: #030f27;
-    font-size: 13px;
+    font-size: 1.2rem;/*Cambio*/
     font-weight: 400;
 }
 
@@ -164,7 +183,8 @@ a:focus {
 .et_pb_promo_description p {
     /*######################*/
     /*________TEXTO_______*/
-    text-shadow: 0.08em 0.08em 0.11em rgba(0,0,0,0.57);
+    text-shadow: 0.08em 0.08em 0.11em rgba(0,0,0,0.90);
+
     
     /*######################*/
     /*____Box - Modeling___*/
@@ -263,6 +283,8 @@ a:focus {
 /*que los items esten uno a la izq y el otro a la derech*/
 .align-items-center{
     justify-content: space-between;
+    margin-left: 0px!important;
+    margin-right: 0px!important;
 }
 /*///////___End___///////////////*/
 
@@ -729,7 +751,7 @@ a:focus {
 .et_pb_text_inner{
     text-align: center;
     background-image: linear-gradient(180deg,rgba(0,0,0,0.13) 0%,#ffffff 100%) !important;
-
+    font-size: 1.9rem;
 }
 
 .container-fluid .carrusel{
@@ -770,7 +792,7 @@ a:focus {
 }
 
 .about .about-text p {
-    font-size: 16px;
+    font-size: 1.7rem;
 }
 
 .about .about-text a.btn {
