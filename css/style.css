@@ -353,7 +353,7 @@ a:focus {
 .carousel {
     position: relative;
     width: 100%;
-    height: calc(140vh - 50px) !important; /*Cambio de 170 a 70*/
+    height: calc(140vh - 50px) !important; /*Cambio de 170 a 70*/ /*ME QUEDE AQUI, en ver el tamaño de el carrusel en dektop y sus medias*/
     min-height: 400px;
     margin: 0 auto;
     text-align: center;
