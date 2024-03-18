@@ -360,7 +360,7 @@ a:focus {
     overflow: hidden;
     margin-top: 0px !important;
 }
-
+ 
 .carousel .carousel-inner,
 .carousel .carousel-item {
     position: relative;
@@ -402,7 +402,7 @@ a:focus {
 
 .carousel .carousel-caption p {
     color: #ffffff;
-    font-size: 1.8rem;
+    font-size: 1.8rem; /*Cambio*/
     margin-bottom: 15px;
     letter-spacing: 1px;
 }
