@@ -350,10 +350,21 @@ a:focus {
 /*******************************/
 /******** Carousel CSS *********/
 /*******************************/
+/*Cambio de 170 a 70*/ 
+/*ME QUEDE AQUI, en ver el tamaño de el carrusel en dektop y sus medias*/
+/*
+.carousel= Es el carrusel total
+.carousel .carousel-caption= Es el contenido, text, boton, etc (al margen de las flechas)
+.carousel .carousel-caption p = contenido parrafo
+.carousel .carousel-caption h1 = contenido titulo
+.carousel .carousel-caption .btn = contenido boton?
+*/
+
 .carousel {
     position: relative;
     width: 100%;
-    height: calc(140vh - 50px) !important; /*Cambio de 170 a 70*/ /*ME QUEDE AQUI, en ver el tamaño de el carrusel en dektop y sus medias*/
+    height: calc(165vh - 150px) !important; 
+
     min-height: 400px;
     margin: 0 auto;
     text-align: center;
@@ -387,7 +398,7 @@ a:focus {
 }
 
 .carousel .carousel-caption {
-    margin-top: 11rem;
+    margin-top: 11rem; /*Cambio*/
     position: 0;
     top: 0;
     bottom: 0;
@@ -514,7 +525,7 @@ a:focus {
 
 .carousel .animated {
     -webkit-animation-duration: 1.5s;
-    animation-duration: 1.5s;
+    animation-duration: 1.3s; /**/
 }
 
 
@@ -878,8 +889,37 @@ a:focus {
     }
 }
 
+/*/////////////__ABOUT - AGREGO____////////////*/
+#contenedor-imagen-nuestra-experiencia{
+    display: flex;
+    flex-direction: row;
+}
+#contenedor-imagen-nuestra-experiencia img{
+    width: 250% ;
+}
 
+#contenedor-imagen-nuestra-experiencia .contenido-imagen-nuestra-exp{
+    max-width: 50% ;
+    background-color: rgba(73,95,95,0.8);
 
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: 1.5rem;
+    height: 64rem ;
+    color: #ffffff !important;
+
+}
+#contenedor-imagen-nuestra-experiencia .contenido-imagen-nuestra-exp h2{
+    color: #ffffff !important;
+    text-shadow: 0.08em 0.08em 0.11em rgba(0,0,0,0.90);
+}
+
+#contenedor-imagen-nuestra-experiencia .contenido-imagen-nuestra-exp .text-left p{
+        color: #e09900;
+        text-shadow: 0.08em 0.08em 0.11em rgba(0,0,0,0.90);
+}
+
+/*/////////////__END__ABOUT - AGREGO____////////////*/
 /*******************************/
 /********** Fact CSS ***********/
 /*******************************/
@@ -1353,20 +1393,23 @@ a:focus {
     .team-item{
         width: 60% !important;
     }
+
+    /*///////////__Foto de EQUIPO__///////////*/    
     /*__________Caja, foto y texto de fotos sede central_____*/
     .foto-de-equipo .team-item{
-        width: 60% !important;
+        width: 77% !important;
     }
 
     .foto-de-equipo .team-img img{
-        width: 60% !important;
+        width: 70% !important;
     }
 
     .foto-de-equipo .team-text{
-        width: 84% !important;
+        width: 78% !important;
     }
 
     /*===============================*/
+    /*///////////__Foto de EQUIPO 2__///////////*/
     /*__________Caja, foto y texto de fotos sede TUCUMAN_____*/
     .foto-de-equipo2{
         display: flex !important;
@@ -1374,12 +1417,12 @@ a:focus {
         flex-wrap: wrap !important;
     }
     .foto-de-equipo2 .team-item{
-        width: 60% !important; /*60*/
+        width: 62% !important; /*60*/
 
     }
 
     .foto-de-equipo2 .team-img img{
-        width: 83% !important;/*83*/
+        width: 77% !important;/*83*/
 
     }
 
@@ -1395,6 +1438,12 @@ a:focus {
         height: calc(-124vh - 150px) !important;
     }
     /*///////////Fin del agrego --///////////*/
+
+    /*///////imagen de ABOUT/////*/
+    #contenedor-imagen-nuestra-experiencia img{
+    width: 95% !important;
+    }
+    /*///////end___imagen de ABOUT/////*/
 }
 
 .faqs .card {
@@ -2005,33 +2054,72 @@ a:focus {
         color: #ffffff !important;
     }
 
+    /*///////___Fotos de EQUIPO___//////////*/
     .foto-de-equipo{
         display: inline-flex;
         flex-wrap:  wrap !important;
     }
 
+     .foto-de-equipo .team-img img{
+
+        width: 68% !important; /*Cambio tamaño de 75 a 68*/
+    }
+
+    .foto-de-equipo .team-text{
+        width: 68% !important;
+    }
+    /*///////___END__Fotos de EQUIPO___//////////*/
+    /*///////___Fotos de EQUIPO 2___//////////*/
     .foto-de-equipo2{
         display: inline-flex;
         flex-wrap:  wrap !important;
     }
 
+    .foto-de-equipo2 .team-img img{
 
-    .foto-de-equipo .team-img img{
-        width: 83% !important;
+        width: 82% !important; /*Cambio tamaño de 75 a 68*/
     }
 
-    .foto-de-equipo .team-text{
-        width: 84% !important;
+    .foto-de-equipo2 .team-text{
+        width: 82% !important;
     }
 
-/*////___END Agrego___////*/
-    /*/////Agrego///*/
+   
+
+    /*///////___END___Fotos de EQUIPO 2___//////////*/
+
+    /*////___END Agrego___////*/
+
+
+    /*/////Cambio al CARRUSEL, Tamaño etc////*/
     #carousel{
-        height: calc(-124vh - 150px) !important;
+        height: calc(32vh - 50px) !important;/*Cambiar los VW*/
     }
 
+    .carousel .carousel-caption{
+        margin-top: 5rem !important;
 
-    /*////////Fin de agrego*/
+        height: calc(37vh - 300px) !important; /*Cambiar los VW*/
+    }
+
+    .carousel .carousel-caption h1{
+
+
+    }
+    /*/////END___Cambio al CARRUSEL, Tamaño etc////*/
+    /*////////__Cambio de imagen de exp___//////*/
+    #contenedor-imagen-nuestra-experiencia{
+        flex-direction: column;
+    }
+    #contenedor-imagen-nuestra-experiencia img{
+        width: 200% ;
+    }
+
+    #contenedor-imagen-nuestra-experiencia .contenido-imagen-nuestra-exp{
+        max-width: 200% ;
+    }
+
+    /*////////__END___Cambio de imagen de exp___//////*/
 }
 
 .sidebar .sidebar-widget {
